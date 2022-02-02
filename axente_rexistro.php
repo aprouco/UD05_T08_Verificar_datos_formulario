@@ -57,7 +57,7 @@
         print "<p>O valor recibido do campo hobbies é: $hobbies</p>";
     
     $rcbInfo= (isset($_REQUEST['rcbInfo']))
-        ? htmlspecialchars(trim(strip_tags($_REQUEST['rcbInfo']), ENT_QUOTES, "ISO-8859-1"))
+        ? htmlspecialchars(trim(strip_tags($_REQUEST['rcbInfo'])), ENT_QUOTES, "ISO-8859-1")
         : "";
     if ($rcbInfo == "")
         print "<>Non se utilizou o control recibir información./p>";
